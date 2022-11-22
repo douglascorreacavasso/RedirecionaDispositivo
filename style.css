@@ -1,0 +1,256 @@
+body {
+    margin: 0px;
+    background-size: 100% auto;
+  
+    -webkit-animation: colorchange 10s infinite;
+    animation: colorchange 10s infinite;
+    transition: transform 2s;
+
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.divc{
+    position: relative;
+    display: flex;
+    margin: auto;
+    display: block;
+}
+.text{
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 0;
+}
+
+
+header {
+
+    padding-top: 32px;
+/*
+       height: calc(120px + 32px);
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+    
+    */
+}
+img {
+    display: flex;
+    margin: auto;
+    display: block;
+}
+
+header img div {
+    width: 120px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    animation: colorDuvida 10s infinite;
+    transition: transform 2s;
+}
+@-webkit-keyframes colorchange {
+    0% {
+        background: #25fff0;
+    }
+
+    25% {
+        background: #dd2712;
+    }
+
+    50% {
+        background: #3dda1d;
+    }
+
+    75% {
+        background: #ff9913;
+    }
+
+    100% {
+        background: #b40bf7;
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        background: #02f1b6;
+    }
+
+    25% {
+        background: #ec09e1;
+    }
+
+    50% {
+        background: #1498f0;
+    }
+
+    75% {
+        background: #f0f323;
+    }
+
+    100% {
+        background: #f1159d;
+    }
+}
+
+
+
+@-webkit-keyframes colorDuvida {
+    0% {
+        background: #066e67;
+    }
+    15% {
+        background: #e8fa46;
+    }
+    25% {
+        background: #e06355;
+    }
+    35% {
+        background: #27b0ff;
+    }
+    50% {
+        background: #126900;
+    }
+
+    75% {
+        background: #d87a00;
+    }
+    85% {
+        background: #b62461;
+    }
+    100% {
+        background: #b40bf7;
+    }
+}
+
+@keyframes colorDuvida  {
+    0% {
+        background: #066e67;
+    }
+    15% {
+        background: #e8fa46;
+    }
+    25% {
+        background: #e06355;
+    }
+    35% {
+        background: #27b0ff;
+    }
+    50% {
+        background: #126900;
+    }
+
+    75% {
+        background: #d87a00;
+    }
+    85% {
+        background: #b62461;
+    }
+    100% {
+        background: #b40bf7;
+    }
+}
+
+
+
+.btn {
+    padding-top: 32px;
+    height: calc(120px + 32px);
+    max-width: 580px;
+    width: 100%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+    
+}
+
+.wrapper {
+    width: 720px;
+    margin: 45px auto;
+}
+.wrapper h1 {
+    font-size: 280%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.wrapper p {
+    font-size: 150%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.wrapper .btn-groups {
+    width: 640px;
+    margin: 0 auto;
+}
+.btn-red-tr, .btn-green-tr, .btn-blue-tr {
+    min-width: 130px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 30px 25px;
+    font-size: 140%;
+    font-weight: 600;
+    color: #ecf0f1;
+    transition: 0.5s;
+}
+.btn-blue-tr {
+    background-color: #3498db;
+}
+
+.btn-blue-tr:before {
+    position: absolute;
+    content: "";
+    border-top: 5px solid #4aa3df;
+    border-left: 5px solid #4aa3df;
+    border-right: 5px solid #258cd1;
+    border-bottom: 5px solid #258cd1;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s;
+}
+.btn-blue-tr:hover {
+    box-shadow: 7px 7px #196090, -7px -7px #8bc4ea;
+    cursor: pointer;
+}
+.btn-blue-tr:hover::before {
+    border: 0px;
+}
+.btn-blue-qa {
+    min-width: 120px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 30px 25px;
+    font-size: 140%;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.btn-blue-qa {
+    border: 5px solid #3498db;
+    color: #3498db;
+}
+.btn-blue-qa:hover {
+    background-color: #258cd1;
+    border: 5px solid #4aa3df;
+    color: #ecf0f1;
+    cursor: pointer;
+}
+
